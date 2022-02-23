@@ -16,8 +16,11 @@
     "hentai",
     "discord"
   ],
-  "author": "! Cacao 🍫 #0027",
+  "author": "!  𝚂𝚌𝚑𝚎𝚛𝚣𝚘  🎶#0027",
   "license": "ISC",
+  "repository": {
+    "url": "https://github.com/CacaoNk0027/cacao_nekoapi"
+  },
   "dependencies": {
     "axios": "^0.26.0"
   }

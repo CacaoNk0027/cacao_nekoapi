@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/npm/v/cacao_nekoapi.svg?maxAge=3600" alt="version">
   <img src="https://img.shields.io/npm/dt/cacao_nekoapi" alt="descargas">
   <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 30px;"><b>cacao_nekoapi</b></p>
-  <p style="padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">por: ! Cacao 🍫 #0027</p>
+  <p style="padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">por: !  𝚂𝚌𝚑𝚎𝚛𝚣𝚘  🎶#0027</p>
 </div>
 
 
