@@ -1,4 +1,4 @@
-const { nekoError } = require('./index.js')
+const { nekoError } = require('../utils/nekoError')
 
 let RestApi1 = require('../fetch/apiRest.js').RestApiv1
 let RestApi2 = require('../fetch/apiRest').RestApiv2
