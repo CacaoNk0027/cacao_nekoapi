@@ -1,0 +1,24 @@
+{
+  "name": "cacao_nekoapi",
+  "version": "2.0.0",
+  "description": "un package de imagenes / gifs con tematica anime para bots de discord que tengan categorias de rolplay u otras",
+  "main": "sources/export.js",
+  "typings": "sources/typings/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "anime",
+    "accion",
+    "gifs",
+    "images",
+    "nsfw",
+    "hentai",
+    "discord"
+  ],
+  "author": "! Cacao 🍫 #0027",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
+}
