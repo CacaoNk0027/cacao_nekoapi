@@ -23,9 +23,6 @@
   "repository": {
     "url": "https://github.com/CacaoNk0027/cacao_nekoapi"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "dependencies": {
     "axios": "^0.26.0"
   }
