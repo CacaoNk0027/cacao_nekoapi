@@ -3,6 +3,11 @@ const { nekoError } = require('../utils/nekoError')
 let RestApi1 = require('../fetch/apiRest.js').RestApiv1
 let RestApi2 = require('../fetch/apiRest').RestApiv2
 
+let animalsData = { className: 'SFW.animals', errorMsg: "la id debe de ser un numero no otra cosa" },
+    actionData = { className: 'SFW.action_2', errorMsg: "la id debe de ser un numero no otra cosa" },
+    reactionData = { className: 'SFW.reaction_2', errorMsg: "la id debe de ser un numero no otra cosa" },
+    animeData = { className: 'SFW.anime_2', errorMsg: "la id debe de ser un numero no otra cosa" }
+
 class SFW {
     static anime_1 = {
         foxgirl() { RestApi1.anime(this.foxgirl.name) },
@@ -43,13 +48,12 @@ class SFW {
         wink() { return RestApi1.reaction(this.wink.name) }, yandere() { return RestApi1.reaction(this.yandere.name) }
     }
     static animals = {
-        data = { className: 'SFW.animals', errorMsg: "la id debe de ser un numero no otra cosa" },
         /**
          * @param {number} id 
          */
         cat(id) {
             if(id) {
-                if(typeof(id) !== "number") throw new nekoError(this.data.className, this.data.errorMsg)
+                if(typeof(id) !== "number") throw new nekoError(animalsData.className, animalsData.errorMsg)
                 return RestApi2.exec('animals', "cat", id)
             } else {
                 return RestApi2.exec('animals', "cat")
@@ -60,7 +64,7 @@ class SFW {
          */
         bear(id) {
             if(id) {
-                if(typeof(id) !== "number") throw new nekoError(this.data.className, this.data.errorMsg)
+                if(typeof(id) !== "number") throw new nekoError(animalsData.className, animalsData.errorMsg)
                 return RestApi2.exec('animals', "bear", id)
             } else {
                 return RestApi2.exec('animals', "bear")
@@ -71,13 +75,12 @@ class SFW {
      * categorira accion de la api rest 2
      */
     static action_2 = {
-        data = { className: 'SFW.action_2', errorMsg: "la id debe de ser un numero no otra cosa" },
         /**
          * @param {number} id  
          */
         pat(id) {
             if(id) {
-                if(typeof(id) !== "number") throw new nekoError(this.data.className, this.data.errorMsg)
+                if(typeof(id) !== "number") throw new nekoError(actionData.className, actionData.errorMsg)
                 return RestApi2.exec('action', "pat", id)
             } else {
                 return RestApi2.exec('action', "pat")
@@ -88,7 +91,7 @@ class SFW {
          */
         lick(id) {
             if(id) {
-                if(typeof(id) !== "number") throw new nekoError(this.data.className, this.data.errorMsg)
+                if(typeof(id) !== "number") throw new nekoError(actionData.className, actionData.errorMsg)
                 return RestApi2.exec('action', "lick", id)
             } else {
                 return RestApi2.exec('action', "lick")
@@ -99,7 +102,7 @@ class SFW {
          */
         read(id) {
             if(id) {
-                if(typeof(id) !== "number") throw new nekoError(this.data.className, this.data.errorMsg)
+                if(typeof(id) !== "number") throw new nekoError(actionData.className, actionData.errorMsg)
                 return RestApi2.exec('action', "read", id)
             } else {
                 return RestApi2.exec('action', "read")
@@ -110,7 +113,7 @@ class SFW {
          */
         write(id) {
             if(id) {
-                if(typeof(id) !== "number") throw new nekoError(this.data.className, this.data.errorMsg)
+                if(typeof(id) !== "number") throw new nekoError(actionData.className, actionData.errorMsg)
                 return RestApi2.exec('action', "write", id)
             } else {
                 return RestApi2.exec('action', "write")
@@ -121,13 +124,12 @@ class SFW {
      * categorira reaccion de la api rest 2
      */
     static reaction_2 = {
-        data = { className: 'SFW.reaction_2', errorMsg: "la id debe de ser un numero no otra cosa" },
         /**
          * @param {number} id  
          */
         sing(id) {
             if(id) {
-                if(typeof(id) !== "number") throw new nekoError(this.data.className, this.data.errorMsg)
+                if(typeof(id) !== "number") throw new nekoError(reactionData.className, reactionData.errorMsg)
                 return RestApi2.exec('reaction', "sing", id)
             } else {
                 return RestApi2.exec('reaction', "sing")
@@ -138,13 +140,12 @@ class SFW {
      * categorira anime de la api rest 2
      */
     static anime_2 = {
-        data = { className: 'SFW.anime_2', errorMsg: "la id debe de ser un numero no otra cosa" },
         /**
          * @param {number} id  
          */
         girl(id) {
             if(id) {
-                if(typeof(id) !== "number") throw new nekoError(this.data.className, this.data.errorMsg)
+                if(typeof(id) !== "number") throw new nekoError(animeData.className, animeData.errorMsg)
                 return RestApi2.exec('anime', "girl", id)
             } else {
                 return RestApi2.exec('anime', "girl")
