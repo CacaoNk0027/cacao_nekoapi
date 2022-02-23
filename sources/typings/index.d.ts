@@ -1,12 +1,9 @@
 declare module "cacao_nekoapi" {
     import { AxiosResponse } from "axios"
-
-    
     /**
      * Version del npm
      */
     export const version: string
-
     /**
      * Clase para obtener mensajes de error u otros
      * ```js
@@ -18,7 +15,6 @@ declare module "cacao_nekoapi" {
         static msg1(): MessagesDatav1 // errores json de la api rest version 1
         static msg2(): MessagesDatav2 // errores json de la api rest version 2
     }
-
     /**
      * Clase para fetchear la api rest version 1
      */
@@ -49,7 +45,6 @@ declare module "cacao_nekoapi" {
          */
         static rolplay_nsfw(name: string): Promise<Rest1.UrlResult> // recibe una promesa con el link de la imagen que solicitaste
     }
-
     /**
      * Clase para fetchear la api rest version 2
      */
@@ -62,7 +57,6 @@ declare module "cacao_nekoapi" {
          */
         static exec(category: categoryType, name: string, number?: number): Promise<Rest2.UrlResult>
     }
-
     export type MessagesDatav1 = {
         className: string; // nombre de la clase en la que se da el error
         error404: string; // mensaje del error
@@ -236,7 +230,6 @@ declare module "cacao_nekoapi" {
             suck(): Promise<Rest1.UrlResult>
         }
     }
-
     /**
      * Clase para soltar un error de fetcheo
      */
@@ -249,7 +242,6 @@ declare module "cacao_nekoapi" {
          */
         constructor(className: string, error: string, response: AxiosResponse)
     }
-
     /**
      * Clase para soltar un error del paquete
      */
@@ -267,7 +259,6 @@ declare module "cacao_nekoapi" {
             url: string;
         }
     }
-    
     declare namespace Rest2 {
         export interface UrlResult {
             url: string;
@@ -276,7 +267,6 @@ declare module "cacao_nekoapi" {
             raza?: string;
         }
     }
-
     declare namespace animalsSeach {
         export interface UrlResult {
             url: string;
@@ -284,7 +274,6 @@ declare module "cacao_nekoapi" {
             id: string
         }
     }
-
     declare namespace rolplaySeach {
         export interface UrlResult {
             url: string;
@@ -292,7 +281,6 @@ declare module "cacao_nekoapi" {
             id: string;
         }
     }
-
     declare namespace animeSeach {
         export interface UrlResult {
             url: string;
@@ -300,6 +288,5 @@ declare module "cacao_nekoapi" {
             id: string;
         }
     }
-    
     declare type categoryType = "animals"|"anime"|"action"|"reaction"
 }
