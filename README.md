@@ -18,9 +18,58 @@ pues ahora las imagenes estan aqui!! y las puedes usar en lo que sea
 
 `npm install cacao_nekoapi`
 
-## cacao_nekoapi
+## Ejemplos
+
+```js
+// ejemplo para obtener gifs con una funcion
+
+/* Requerimos el paquete npm cacao_nekoapi */
+const nekoapi = require('cacao_nekoapi');
+
+/* creamos una funcion con el nombre que gustes pero que sea asincrona */
+const myNekoFunction = async () => { 
+  // nekoapi cuenta con dos clases principales
+
+  /**
+   * SFW
+   * son todos aquellos gifs que no son contenido erotico o +18
+   * ejemplos son => cat, kiss, girl, sing
+   */
+  let kissGifData = await nekoapi.SFW.action_1.kiss() // retorna gifs de besos
+   /**
+    * lo que se mostraria seria algo asi 
+    * { url: "https://restnekoapi.herokuapp.com/kiss/example" }
+    * la respuesta depende de lo que solicites, aveces pueden aparecer otros objetos
+    * cabe aclarar que el link de arriba es un ejemplo por lo que la ruta no existe
+   */
+  console.log(kissGifData)
+  
+  /**
+   * NSFW
+   * son todos aquellos gifs o imagenes que son de contenido +18 o erotico
+   * ejemplos son => uniform, f*ck, ahegao, oral
+   */
+  let nsfwFckData = await nekoapi.NSFW.nsfw.uniform() // retorna imagenes de chicas con uniforme (anime)
+  /**
+   * lo que se mostraria seria algo asi
+   * { url: "https://restnekoapi.herokuapp.com/nsfw/ahegao" }
+   * la respuesta depende de lo que solicites, aveces pueden aparecer mas objetos
+   * cabe aclarar que el link de arriba es un ejemplo por lo que la ruta no existe 
+   */
+  console.log(nsfwFckData)
+
+  /**
+   * es necesario que todos los requerimientos siempre lleven un await antes para que no devuelva una promesa
+   * Promise { <pending> } 
+   */
+}
+
+myNekoFunction()
+```
 
 nota: es necesario que para obtener una url todo dentro de una función async ya que si no el valor url dara indefinido `Undefined`
+
+## cacao_nekoapi
 
 | nekoapi      |                                                       |
 | ------------ | ----------------------------------------------------- |
