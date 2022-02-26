@@ -10,14 +10,14 @@ let animalsData = { className: 'SFW.animals', errorMsg: "la id debe de ser un nu
 
 class SFW {
     static anime_1 = {
-        foxgirl() { RestApi1.anime(this.foxgirl.name) },
-        kemonomimi() { RestApi1.anime(this.kemonomimi.name) },
-        girl() { RestApi1.anime(this.girl.name) },
-        maple() { RestApi1.anime(this.maple.name) },
-        mbwallpaper() { RestApi1.anime(this.mbwallpaper.name) },
-        neko() { RestApi1.anime(this.neko.name) },
-        waifu() { RestApi1.anime(this.waifu.name) },
-        wallpaper() { RestApi1.anime(this.wallpaper.name) },
+        foxgirl() { return RestApi1.anime(this.foxgirl.name) },
+        kemonomimi() { return RestApi1.anime(this.kemonomimi.name) },
+        girl() { return RestApi1.anime(this.girl.name) },
+        maple() { return RestApi1.anime(this.maple.name) },
+        mbwallpaper() { return RestApi1.anime(this.mbwallpaper.name) },
+        neko() { return RestApi1.anime(this.neko.name) },
+        waifu() { return RestApi1.anime(this.waifu.name) },
+        wallpaper() { return RestApi1.anime(this.wallpaper.name) },
     }
     static action_1 = {
         camp() { return RestApi1.action(this.camp.name) }, cook() { return RestApi1.action(this.cook.name) },

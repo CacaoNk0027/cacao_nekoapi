@@ -92,23 +92,23 @@ class RestApiv2 extends Messages {
             } else {
                 if(!number) {
                     let jsonDat = await axios.get(`https://restnekoapi.herokuapp.com/api/animals?gif=${name}`).then(response => response).catch(error => {
-                        new nekoError(super.msg1().className, error)
+                        new nekoError(super.msg2().className, error)
                     })
                     if(jsonDat.data.statusCode == 200) {
                         return jsonDat.data
                     } else if(jsonDat.data.statusCode == 404) {
-                        throw new nekoAPIError(super.msg1().className, super.msg1().error404, jsonDat)
+                        throw new nekoAPIError(super.msg2().className, super.msg2().error404, jsonDat)
                     }
                 } else {
                     let numberString = number.toString()
                     numberString.length == 1 ? `00${number}` : ( numberString.length == 2 ? `0${number}`: numberString)
                     let jsonDat = await axios.get(`https://restnekoapi.herokuapp.com/api/animals?gif=${name}&number=${numberString}`).then(response => response).catch(error => {
-                        new nekoError(super.msg1().className, error)
+                        new nekoError(super.msg2().className, error)
                     })
                     if(jsonDat.data.statusCode == 200) {
                         return jsonDat.data
                     } else if(jsonDat.data.statusCode == 404) {
-                        throw new nekoAPIError(super.msg1().className, super.msg1().error404, jsonDat)
+                        throw new nekoAPIError(super.msg2().className, super.msg2().error404, jsonDat)
                     }
                 }
             }
@@ -118,23 +118,23 @@ class RestApiv2 extends Messages {
             } else {
                 if(!number) {
                     let jsonDat = await axios.get(`https://restnekoapi.herokuapp.com/api/anime?gif=${name.toLowerCase()}`).then(response => response).catch(error => {
-                        new nekoError(super.msg1().className, error)
+                        new nekoError(super.msg2().className, error)
                     })
                     if(jsonDat.data.statusCode == 200) {
                         return jsonDat.data
                     } else if(jsonDat.data.statusCode == 404) {
-                        throw new nekoAPIError(super.msg1().className, super.msg1().error404, jsonDat)
+                        throw new nekoAPIError(super.msg2().className, super.msg2().error404, jsonDat)
                     }
                 } else {
                     let numberString = number.toString()
                     numberString.length == 1 ? `00${number}` : ( numberString.length == 2 ? `0${number}`: numberString)
                     let jsonDat = await axios.get(`https://restnekoapi.herokuapp.com/api/anime?gif=${name}&number=${numberString}`).then(response => response).catch(error => {
-                        new nekoError(super.msg1().className, error)
+                        new nekoError(super.msg2().className, error)
                     })
                     if(jsonDat.data.statusCode == 200) {
                         return jsonDat.data
                     } else if(jsonDat.data.statusCode == 404) {
-                        throw new nekoAPIError(super.msg1().className, super.msg1().error404, jsonDat)
+                        throw new nekoAPIError(super.msg2().className, super.msg2().error404, jsonDat)
                     }
                 }
             }
@@ -144,23 +144,23 @@ class RestApiv2 extends Messages {
             } else {
                 if(!number) {
                     let jsonDat = await axios.get(`https://restnekoapi.herokuapp.com/api/rolplay/action?gif=${name}`).then(response => response).catch(error => {
-                        new nekoError(super.msg1().className, error)
+                        new nekoError(super.msg2().className, error)
                     })
                     if(!jsonDat.data.statusCode) {
                         return jsonDat.data
                     } else if(jsonDat.data.statusCode == 404) {
-                        throw new nekoAPIError(super.msg1().className, super.msg1().error404, jsonDat)
+                        throw new nekoAPIError(super.msg2().className, super.msg2().error404, jsonDat)
                     }
                 } else {
                     let numberString = number.toString()
                     numberString.length == 1 ? numberString = `00${number.toString()}` : ( numberString.length == 2 ? numberString = `0${number.toString()}`: numberString)
                     let jsonDat = await axios.get(`https://restnekoapi.herokuapp.com/api/rolplay/action?gif=${name}&number=${numberString}`).then(response => response).catch(error => {
-                        new nekoError(super.msg1().className, error)
+                        new nekoError(super.msg2().className, error)
                     })
                     if(!jsonDat.data.statusCode) {
                         return jsonDat.data
                     } else if(jsonDat.data.statusCode == 404) {
-                        throw new nekoAPIError(super.msg1().className, super.msg1().error404, jsonDat)
+                        throw new nekoAPIError(super.msg2().className, super.msg2().error404, jsonDat)
                     }
                 }
             }
@@ -170,23 +170,23 @@ class RestApiv2 extends Messages {
             } else {
                 if(!number) {
                     let jsonDat = await axios.get(`https://restnekoapi.herokuapp.com/api/rolplay/reaction?gif=${name}`).then(response => response).catch(error => {
-                        new nekoError(super.msg1().className, error)
+                        new nekoError(super.msg2().className, error)
                     })
                     if(!jsonDat.data.statusCode) {
                         return jsonDat.data
                     } else if(jsonDat.data.statusCode == 404) {
-                        throw new nekoAPIError(super.msg1().className, super.msg1().error404, jsonDat)
+                        throw new nekoAPIError(super.msg2().className, super.msg2().error404, jsonDat)
                     }
                 } else {
                     let numberString = number.toString()
                     numberString.length == 1 ? `00${number}` : ( numberString.length == 2 ? `0${number}`: numberString)
                     let jsonDat = await axios.get(`https://restnekoapi.herokuapp.com/api/rolplay/reaction?gif=${name}&number=${numberString}`).then(response => response).catch(error => {
-                        new nekoError(super.msg1().className, error)
+                        new nekoError(super.msg2().className, error)
                     })
                     if(!jsonDat.data.statusCode) {
                         return jsonDat.data
                     } else if(jsonDat.data.statusCode == 404) {
-                        throw new nekoAPIError(super.msg1().className, super.msg1().error404, jsonDat)
+                        throw new nekoAPIError(super.msg2().className, super.msg2().error404, jsonDat)
                     }
                 }
             }
