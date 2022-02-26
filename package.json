@@ -5,6 +5,9 @@
   "main": "sources/export.js",
   "readme": "README.md",
   "homepage": "https://webmaplebotml.herokuapp.com/",
+  "contributors": [
+    "cacao0027"
+  ],
   "typings": "sources/typings/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +21,7 @@
     "hentai",
     "discord"
   ],
-  "author": "!  𝚂𝚌𝚑𝚎𝚛𝚣𝚘  🎶#0027",
+  "author": "cacao0027",
   "license": "ISC",
   "repository": {
     "url": "https://github.com/CacaoNk0027/cacao_nekoapi"
