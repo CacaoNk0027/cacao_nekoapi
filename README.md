@@ -1,5 +1,5 @@
 <div align="center">
-  <p><a href="https://discord.gg/PKGhvUKaQN"><img src="https://media.discordapp.net/attachments/809089744574611507/855990674046582794/1624150826097.png?width=322&height=461" width="70" alt="cacao_nekoapi" /></a><a href="https://discord.gg/PKGhvUKaQN"><img src="https://nodei.co/npm/cacao_nekoapi.png?downloads=true&downloadRank=true&stars=true" alt="cacao_nekoapi" style="margin-bottom: 15px; margin-left: 15px;"></a></p>
+  <p><a href="https://discord.gg/PKGhvUKaQN"><img src="https://nodei.co/npm/cacao_nekoapi.png?downloads=true&downloadRank=true&stars=true" alt="cacao_nekoapi" style="margin-bottom: 15px; margin-left: 15px;"></a></p>
   <img src="https://img.shields.io/npm/v/cacao_nekoapi.svg?maxAge=3600" alt="version">
   <img src="https://img.shields.io/npm/dt/cacao_nekoapi" alt="descargas">
   <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 30px;"><b>cacao_nekoapi</b></p>
